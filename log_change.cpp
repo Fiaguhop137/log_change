@@ -27,9 +27,8 @@ int main(int argc,char* argv[]){
             std::cout<<"Create/overwrite changelog.md file? (y/n): "<<std::flush;
             std::string response;
             std::getline(std::cin,response);
-            if(response=="y"||response=="Y"){
-                writeHeader=true;
-            }else{
+            if(response=="y"||response=="Y"){writeHeader=true;}
+            else{
                 std::cerr<<"Aborting\n";
                 return 1;
             }
